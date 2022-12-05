@@ -8,7 +8,7 @@ export SETUP_FILE_URL=https://raw.githubusercontent.com/Mhieu14/demo-validator-d
 # download setup file
 curl -O $SETUP_FILE_URL
 tar -xf $SETUP_FILE_NAME.tar.xz
-rm $SETUP_FILE_NAME/.env
+rm -f $SETUP_FILE_NAME/.env
 
 # create env
 echo -e $ENV_FILE > $SETUP_FILE_NAME/.env
