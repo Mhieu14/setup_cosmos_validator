@@ -9,7 +9,7 @@ rm -f ~/cosmos_node_monitoring/.env
 echo -e $MONITERING_ENV_FILE > ~/cosmos_node_monitoring/.env
 
 # add prometheus prams
-~/cosmos_node_monitoring/add_validator.sh VALIDATOR_IP PROM_PORT VALOPER_ADDRESS WALLET_ADDRESS PROJECT_NAME
+~/cosmos_node_monitoring/add_validator.sh $VALIDATOR_IP $PROM_PORT VALOPER_ADDRESS WALLET_ADDRESS PROJECT_NAME
 
 # run container
 cd ~/cosmos_node_monitoring/
